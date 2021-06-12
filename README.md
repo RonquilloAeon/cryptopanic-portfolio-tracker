@@ -1,4 +1,4 @@
-# Crpyto Panic Portfolio Tracker
+# Crypto Panic Portfolio Tracker
 
 A simple script to download your portfolio data for analysis.
 
