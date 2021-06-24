@@ -17,14 +17,14 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-PORFOLIO_ENDPOINT = f"{config.API_BASE_URL}/portfolio/"
+PORTFOLIO_ENDPOINT = f"{config.API_BASE_URL}/portfolio/"
 DATA_PATH = Path("data")
 
 
 async def fetch_portfolio() -> dict:
     async with httpx.AsyncClient() as client:
         response = await client.get(
-            PORFOLIO_ENDPOINT, params={"auth_token": config.API_TOKEN}
+            PORTFOLIO_ENDPOINT, params={"auth_token": config.API_TOKEN}
         )
         data = response.json()
 

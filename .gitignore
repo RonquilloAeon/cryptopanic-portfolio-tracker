@@ -126,4 +126,5 @@ cython_debug/
 # Project
 data/
 
+.DS_Store
 notes.md
